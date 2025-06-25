@@ -1,0 +1,18 @@
+{
+  "preprocessing": {
+    "enable_brightness_adjustment": true,
+    "brightness_delta_range": [-0.2, 0.2],
+
+    "enable_contrast_adjustment": true,
+    "contrast_range": [0.8, 1.2],
+
+    "enable_resize": true,
+    "resize_target_size": [512, 512],
+
+    "enable_random_shift": true,
+    "random_shift_max": 50,
+
+    "enable_perspective_transform": true,
+    "perspective_angle_range_deg": [-20, 65]
+  }
+}

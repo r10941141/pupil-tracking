@@ -1,0 +1,18 @@
+{
+  "input": {
+    "train_path": "./data/train/",
+    "image_dir": "images/",
+    "label_dir": "labels/",
+    "image_format": ".png",
+    "resize_shape": [512, 512],
+    "load_fraction": 0.1
+  },
+  "data": {
+    "batch_size": 16,
+    "random_seed": 46
+  },
+  "output": {
+    "savefile_path_prefix": "./outputs/datafile_",
+    "data_from": ""
+  }
+}
