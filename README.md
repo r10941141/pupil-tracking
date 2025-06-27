@@ -3,3 +3,5 @@ This is our final project for the Computer Vision course. Since the project is q
 The main goal of this project is Pupil Tracking and Segmentation. We use a CNN-based architecture combined with image preprocessing and postprocessing techniques to improve the accuracy and robustness of the model.
 
 This repo can use the Docker image file `boogaloo1011/skinoct:9988_v2` as the execution environment. The image does not contain the source code.
+
+Notebooks contains development records and intermediate experiments. The final implementation has been modularized into the main Python scripts.
