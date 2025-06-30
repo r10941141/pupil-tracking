@@ -22,17 +22,17 @@ def generator(X_train, Y_train, batch_size, aug_config ):
             x = np.expand_dims(x_batch[i], axis=-1)
             y = np.expand_dims(y_batch[i], axis=-1)
 
-            if aug_config["enable_brightness_adjustment"]
-            x = image_filter.adjust_brightness(x, aug_config["brightness_delta_range"])
+            if aug_config["enable_brightness_adjustment"]:
+                x = image_filter.adjust_brightness(x, aug_config["brightness_delta_range"])
 
-            if aug_config["enable_contrast_adjustment"]
-            x = image_filter.adjust_contrast(x, aug_config["contrast_range"])
+            if aug_config["enable_contrast_adjustment"]:
+                x = image_filter.adjust_contrast(x, aug_config["contrast_range"])
 
-            if aug_config["enable_resize"]
-            x, y = resize.resize_image_and_mask(x, y, aug_config["resize_target_size"])
+            if aug_config["enable_resize"]:
+                x, y = resize.resize_image_and_mask(x, y, aug_config["resize_target_size"])
 
-            if aug_config["enable_random_shift"]
-            x, y = random_shift.random_shift(x, y, aug_config["random_shift_max"])
+            if aug_config["enable_random_shift"]:
+                x, y = random_shift.random_shift(x, y, aug_config["random_shift_max"])
             
             if aug_config["enable_perspective_transform"]:
                 x, y = perspective.perspective_transform(x, y, aug_config["perspective_angle_range_deg"])
